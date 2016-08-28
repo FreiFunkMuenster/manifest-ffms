@@ -29,7 +29,7 @@ fi
 
 # Manifest-datei herunterladen falls diese noch nicht existiert 
 if [ ! -f "$FLAVOUR/$VERSION/$BRANCH.manifest" ]; then
-  wget "https://freifunk-muensterland.de/$FLAVOUR/versions/$VERSION/sysupgrade/$BRANCH.manifest" --output-document="$FLAVOUR/$VERSION/$BRANCH.manifest"
+  wget "https://firmware.freifunk-muensterland.de/$FLAVOUR/versions/$VERSION/sysupgrade/$BRANCH.manifest" --output-document="$FLAVOUR/$VERSION/$BRANCH.manifest"
 fi
 
 

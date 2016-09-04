@@ -54,7 +54,7 @@ awk 'BEGIN   { sep=0 }
 # Signatur erstellen und Manifest-Datei mit der neuen Signatur 
 # aktualisieren 
 
-ecdsautil sign "$upper" < "$SECRET" >> "$lower"
+ecdsasign "$upper" < "$SECRET" >> "$lower"
 (
 	cat  "$upper"
 	echo ---
